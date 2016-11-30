@@ -2,6 +2,8 @@
 
 This project was generated with [angular-cli](https://github.com/angular/angular-cli) version 1.0.0-beta.19-3.
 
+UPGRADED TO version 1.0.0-beta.21. because of Kendo UI for Angular peer dependencies.
+
 ## Conceptual
 
 Angualr 2 app, Bootstrap like design with WK CSS theming, Authentication via Azure AD + calls to secured REST API via ADAL, possibilities to test Kendo UI for Angular 2

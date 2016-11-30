@@ -1,2 +1,12 @@
 /* You can add global styles to this file, and also import other style files */
 .top-buffer { margin-top: 150px; }
+.login-box {
+  width: 400px;
+  margin: auto;
+}
+.login-zone {
+  background-image: url(assets/images/azure.png);
+  height: 135px;
+  text-align: center;
+  color: white;
+}

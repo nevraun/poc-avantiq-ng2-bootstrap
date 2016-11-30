@@ -2,8 +2,8 @@
   <div class="wk-header">
     <div class="wk-header-container"><a href="#" class="wk-brand">Wolters Kluwer</a>
       <ul class="wk-nav">
-        <li role="presentation"><a href="#"><span class="wk-icon-help-outline"></span>Help</a></li>
-        <li role="presentation"><a href="#"><span class="wk-icon-contact-outline"></span>Account</a></li>
+        <!--<li role="presentation"><a href="#"><span class="wk-icon-help-outline"></span>Help</a></li>-->
+        <li role="presentation"><app-user-account></app-user-account></li>
       </ul>
     </div>
   </div>
@@ -11,16 +11,16 @@
     <div class="wk-navbar-container">
       <ul class="wk-nav">
         <li role="presentation" class="active"><a href="#">Home</a></li>
-        <li role="presentation"><a href="#">Teams</a></li>
-        <li role="presentation"><a href="#">Projects</a></li>
-        <li role="presentation"><a href="#">Reports</a></li>
+        <li role="presentation"><a [routerLink]="['/organize/activities']">Organize</a></li>
+        <li role="presentation"><a href="#">Search</a></li>
+        <li role="presentation"><a href="#">Report</a></li>
       </ul>
       <div class="wk-navbar-product-name"><strong><em>Search Automation</em></strong> 1.0</div>
     </div>
   </nav>
 </div>
 <div class="container top-buffer">
-  <div>{{title}}</div>
+  <router-outlet></router-outlet>
 </div>
 <div class="wk-footer">
   <div class="wk-footer-copyright">

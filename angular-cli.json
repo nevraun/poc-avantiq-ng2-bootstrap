@@ -1,6 +1,6 @@
 {
   "project": {
-    "version": "1.0.0-beta.19-3",
+    "version": "1.0.0-beta.21",
     "name": "poc-avantiq-ng2-bootstrap"
   },
   "apps": [
@@ -8,8 +8,7 @@
       "root": "src",
       "outDir": "dist",
       "assets": [
-        "assets",
-        "favicon.ico"
+        "assets"
       ],
       "index": "index.html",
       "main": "main.ts",
@@ -18,9 +17,10 @@
       "prefix": "app",
       "mobile": false,
       "styles": [
-        "styles.css"
+        "styles.css",
+        "../node_modules/@telerik/kendo-theme-default/dist/all.css"
       ],
-      "scripts": [],
+      "scripts": ["../node_modules/adal-angular/lib/adal.js"],
       "environments": {
         "source": "environments/environment.ts",
         "dev": "environments/environment.ts",
