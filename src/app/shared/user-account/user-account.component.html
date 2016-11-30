@@ -1,0 +1,4 @@
+<div *ngIf="userInfo.isAuthenticated">
+    <span class="wk-icon-contact-outline">{{userInfo.userName}}</span>
+    <a href="#" (click)="disconnect()">Logout</a>
+</div>

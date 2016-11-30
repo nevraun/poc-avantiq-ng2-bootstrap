@@ -1,0 +1,14 @@
+<h1>Activities</h1>
+<!--<div *ngFor="let activity of activities">{{activity.Id}} {{activity.Code}}</div>-->
+<kendo-grid
+  [data]="gridView"
+  [sortable]="{ mode: 'multiple' }"
+  [sort]="sort"
+  (sortChange)="sortChange($event)">
+  <kendo-grid-column field="Id" title="ID" width="50">
+  </kendo-grid-column>
+  <kendo-grid-column field="Code" title="Code" width="200">
+  </kendo-grid-column>
+  <kendo-grid-column field="Description" title="Description" width="200">
+  </kendo-grid-column>
+</kendo-grid>
