@@ -20,7 +20,16 @@ export const environment = {
       private: {
         activities: '/activities',
         activity: '/activities/:id',
-        myActivity: '/activities/current'
+        myActivity: '/current/activities'
+      }
+    }
+  },
+  office365: {
+    protocol: 'https',
+    host: 'outlook.office.com/api/v2.0',
+    endpoints: {
+      private: {
+        me: '/me'
       }
     }
   }

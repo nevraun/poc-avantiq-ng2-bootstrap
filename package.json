@@ -21,6 +21,7 @@
     "@angular/platform-browser-dynamic": "2.2.1",
     "@angular/router": "3.2.1",
     "@progress/kendo-angular-grid": "^0.6.3",
+    "@progress/kendo-angular-layout": "^0.15.3",
     "@progress/kendo-data-query": "^0.1.7",
     "@telerik/kendo-theme-bootstrap": "^0.10.0",
     "@telerik/kendo-theme-default": "^1.31.0",

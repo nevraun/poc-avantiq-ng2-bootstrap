@@ -4,6 +4,7 @@ import { AppComponent } from "./app.component";
 import { LOGIN_ROUTES } from "./login/index";
 import { HOME_ROUTES } from "./home/index";
 import { ACTIVITIES_ROUTES } from "./activities/index";
+import { SEARCH_ROUTES } from "./search/index";
 
 const ROUTES: Routes = [
   {
@@ -13,7 +14,8 @@ const ROUTES: Routes = [
   },
   ...LOGIN_ROUTES,
   ...HOME_ROUTES,
-  ...ACTIVITIES_ROUTES
+  ...ACTIVITIES_ROUTES,
+  ...SEARCH_ROUTES
 ];
 
 export const APP_ROUTING_PROVIDERS: any[] = [

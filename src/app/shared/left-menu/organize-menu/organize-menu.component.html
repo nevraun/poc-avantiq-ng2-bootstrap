@@ -1,0 +1,18 @@
+<div class="panelbar-wrapper">
+  <kendo-panelbar>
+    <kendo-panelbar-item title="Activities" expanded="true" selected="true">
+      <kendo-panelbar-item title="All activities" [routerLink]="['/organize/activities']"></kendo-panelbar-item>
+      <kendo-panelbar-item title="My activities" [routerLink]="['/organize/myactivities']"></kendo-panelbar-item>
+    </kendo-panelbar-item>
+    <kendo-panelbar-item title="Offices">
+      <template kendoPanelBarContent>
+        <div><a [routerLink]="['/organize/activities']">All activities</a></div>
+        <div><a [routerLink]="['/home']">Home</a></div>
+      </template>
+    </kendo-panelbar-item>
+    <kendo-panelbar-item title="Tasks">
+      <kendo-panelbar-item title="All tasks"></kendo-panelbar-item>
+      <kendo-panelbar-item title="My tasks"></kendo-panelbar-item>
+    </kendo-panelbar-item>
+  </kendo-panelbar>
+</div>

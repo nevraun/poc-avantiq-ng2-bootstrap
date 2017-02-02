@@ -10,9 +10,9 @@
   <nav class="wk-navbar wk-navbar-product">
     <div class="wk-navbar-container">
       <ul class="wk-nav">
-        <li role="presentation" class="active"><a href="#">Home</a></li>
-        <li role="presentation"><a [routerLink]="['/organize/activities']">Organize</a></li>
-        <li role="presentation"><a href="#">Search</a></li>
+        <li role="presentation" routerLinkActive="active"><a [routerLink]="['/home']">Home</a></li>
+        <li role="presentation" [class.active]="router.isActive('/organize')"><a [routerLink]="['/organize/activities']">Organize</a></li>
+        <li role="presentation"><a [routerLink]="['/home']">Search</a></li>
         <li role="presentation"><a href="#">Report</a></li>
       </ul>
       <div class="wk-navbar-product-name"><strong><em>Search Automation</em></strong> 1.0</div>

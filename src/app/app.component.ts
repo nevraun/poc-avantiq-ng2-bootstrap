@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { environment } from "../environments/environment";
 import { AdalService } from "./shared/index";
+import {Router} from '@angular/router';
 
 @Component({
   selector: 'app-root',
@@ -9,7 +10,7 @@ import { AdalService } from "./shared/index";
 })
 export class AppComponent implements OnInit {
 
-  constructor(private _adalService:AdalService) {}
+  constructor(private _adalService:AdalService, private router: Router) {}
 
   get isLogged():boolean {
     return this._adalService.userInfo.isAuthenticated;
